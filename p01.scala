@@ -1,7 +1,14 @@
-//object 和 class通信
+/**
+ * [object 和 class通信]
+ * @Author   WYQ
+ * @DateTime 2017-09-24T02:35:25+0800
+ * @param    {[type]}                 a [description]
+ * @param    {[type]}                 b [description]
+ * @return   {[type]}                   [description]
+ */
 
 object my{
-	 private var m:Int =1//无论是否private 只要有my即可读取
+	 private var m:Int =1//无论是否private 只要有myji'ke'du'qu
     def display(){
     	var o:my= new my //使读取class 中private var
     	println("obmy"+o.c)
