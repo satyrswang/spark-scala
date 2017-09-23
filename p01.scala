@@ -8,7 +8,7 @@
  */
 
 object my{
-	 private var m:Int =1//无论是否private 只要有myji'ke'du'qu
+	 private var m:Int =1//无论是否private 只要有my
     def display(){
     	var o:my= new my //使读取class 中private var
     	println("obmy"+o.c)
