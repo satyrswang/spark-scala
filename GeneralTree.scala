@@ -8,11 +8,10 @@
 
 
 class GeneralTree[A]{
+	
 	class Node(val data:A,val children:Seq[Node]){
 		
 		private val root:Node =Null
-		
-		def parent()
 		
 		def preorder(visit:A=>Unit){
 			def recur(n:Node){
@@ -37,16 +36,4 @@ class GeneralTree[A]{
 			1+n.children.foldLeft(0)((s,c)=>s+size(c))
 		}
 	}
-}
-
-}
-
-
-
-
-
-
-
-def main(args:Array[String]){
-
 }
