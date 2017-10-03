@@ -1,11 +1,12 @@
 /**
- * [mainly about class]
+ * class defination syntax
  * @Author   WYQ
  * @DateAnyime 2017-09-24 03:02:03+0800
  * @return   {[type]}                 [description]
  */
 
-class Point( val _x:Int =2,var y:Int=1 ){ //Parameters without val or var are private values, visible only within the class.
+class Point( val _x:Int =2,var y:Int=1 ){ 
+	//Parameters without val or var are private values, visible only within the class.
 	override def  toString:String = {
 		s"($x,$y)"
 	}
@@ -44,7 +45,7 @@ object test{
 
 		val face: Char = '☺'
 		val number: Int = face  // 9786
-		val origin :Point =new Point //必须传入相同格式的参数，除非class构造时已有默认值 new用法
+		val origin :Point =new Point //必须传入相同格式的参数，除非class构造时已有默认值 new
 		val a :Point=new Point(face)
 		println(a.x);	println(a.y)
 
