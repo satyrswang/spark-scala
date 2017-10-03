@@ -9,8 +9,6 @@ import org.junit.Assert._
 import org.junit._
 import BSTMap
 
-
-
 class TestBSTMap{
 	var map:BSTMap[Int,Int] =null
 	@Before def makeMap{
@@ -33,6 +31,4 @@ class TestBSTMap{
 		
 		assertEquals(Some(5),map.get(5))
 	}
-
-
 }
