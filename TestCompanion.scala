@@ -1,5 +1,5 @@
 /**
- * [object 和 class通信]
+ * [companion communication]
  * @Author   WYQ
  * @DateTime 2017-09-24T02:35:25+0800
  * @param    {[type]}                 a [description]
@@ -10,7 +10,7 @@
 object my{
 	private var m:Int =1
 	def display(){
-		var o:my= new my //使读取class 中private var
+		var o:my= new my  //get private var in class my
     		println("obmy"+o.c)
 	}
 }
@@ -18,13 +18,15 @@ object my{
 class my{
 	import my._
 	private var c:Int =2
-	def show(){println("calss"+my.m)}
+	def show(){
+		println("calss"+my.m) //get the private var in object my
+	}
 }
 
 object test{
 	def main(args:Array[String]){
-		var cc:my = new my
+		var myclass:my = new my
 		my.display()
-		cc.show()
+		myclass.show()
 	}
 }
