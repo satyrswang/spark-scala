@@ -1,11 +1,11 @@
 /**
- * [main description]
+ * [solution for how to get members or methods without objects]
  * @Author   WYQ
  * @DateTime 2017-09-30T04:19:45+0800
  * @return   {[type]}                 [description]
  */
 
-object tmp{
+object test{
   class IntPir(val x: Int, val y: Int){
 
     import math.Ordering
