@@ -1,5 +1,5 @@
 /**
- * [main description]
+ * [synchronize in scala]
  * @Author   WYQ
  * @DateTime 2017-10-01T20:25:50+0800
  * @return   {[type]}                 [description]
@@ -20,12 +20,10 @@ class Threadt(private var name:String/*,private var thede:theDe*/) extends Threa
     // this.thede = thede
     start();
   }
-
   
   override def run()=test(name)
     //thede.test(name)
 }
-
 
 def main(args:Array[String]){
   // var thede = new theDe
@@ -35,6 +33,4 @@ def main(args:Array[String]){
   new Threadt("t1")
   new Threadt("t2")
   new Threadt("t3")
-
-
 }
