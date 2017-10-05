@@ -1,1 +1,3 @@
-this is data for practice
+this is data for practices
+
+https://download.bls.gov/pub/time.series/la/
